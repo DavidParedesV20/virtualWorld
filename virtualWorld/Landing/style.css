@@ -1,0 +1,171 @@
+/*documento style.css*/
+body {
+    background: linear-gradient(blue, rgb(0, 51, 255), rgb(7, 249, 144), rgb(7, 198, 141));
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.logoIndex {
+    animation:scale-up-top 0.4s;
+    position: absolute;
+    text-align: center; /* Alinea el contenido del contenedor al centro */
+}
+
+.celeb {
+    animation: apperance 1s;
+    display: none;
+}
+
+/*Cuadro de registro*/
+.cuadroIndexRegis {
+    position: absolute;
+    animation: scale-up-right 0.4s;
+    background-color: rgba(0, 0, 0, 0.736);
+    height: 250px;
+    width: 250px;
+    margin-top: 10%;
+    margin-right: -25%;
+    border-radius: 10px;
+}
+/* Registro Nombre*/
+.nameRegis {
+    font-family: 'Righteous';
+    margin-top: 10%;
+    margin-left: 5%;
+    color: white;
+    font-size: 18px;
+}
+.inputNameBox {
+    border-radius: 15px;
+}
+/*Registro Mail*/
+.mailRegis {
+    font-family: 'Righteous';
+    margin-left: 5%;
+    color: white;
+    font-size: 18px;
+}
+.inputMailBox {
+    border-radius: 15px;
+}
+/*Registro Password*/
+.passRegis {
+    font-family: 'Righteous';
+    margin-left: 5%;
+    color: white;
+    font-size: 18px;
+}
+.inputPassBox {
+    border-radius: 15px;
+}
+/*Boton de registro*/
+.btnRegis {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family:"Righteous";
+    margin-top: 10%;
+    margin-left: 34%;
+    border-radius: 18px;
+    background: linear-gradient(rgb(3, 250, 3), green);
+    height: 45px;
+    width: 90px;
+}
+.btnRegis:hover{
+    color: white;
+    background: linear-gradient(rgb(161, 241, 161), rgb(5, 235, 5));
+}
+/*==========================================================================*/
+/* Cuadro de inicio*/
+.cuadroIndexInicio {
+    position: absolute;
+    animation:scale-up-left 0.4s;
+    font-family: 'Righteous';
+    background-color: rgba(0, 0, 0, 0.736);
+    height: 250px;
+    width: 250px;
+    margin-top: 10%;
+    margin-right: 25%;
+    border-radius: 10px;
+}
+/* Registro Nombre*/
+.nameIni {
+    margin-top: 25%;
+    margin-left: 5%;
+    color: white;
+    font-size: 18px;
+}
+.inputNameIni {
+    border-radius: 15px;
+}
+/*Registro Password*/
+.passIni {
+    margin-left: 5%;
+    color: white;
+    font-size: 18px;
+}
+
+.inputPassBox {
+    border-radius: 15px;
+}
+/*Boton de registro*/
+.btnIni {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family:'Righteous';
+    margin-top: 10%;
+    margin-left: 36%;
+    border-radius: 18px;
+    background: linear-gradient(rgb(3, 250, 3), green);
+    height: 45px;
+    width: 90px;
+}
+.btnIni:hover{
+    color: white;
+    background: linear-gradient(rgb(161, 241, 161), rgb(5, 235, 5));
+}
+.forgotLink {
+    font-size: 16px;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+@keyframes scale-up-top {
+    0% {
+        transform:scale(.15);transform-origin:center top 
+    } 
+    100%
+    {
+        transform:scale(1);transform-origin:center top
+    }
+}
+
+
+@keyframes scale-up-right {
+    0% {
+        transform:scale(.5);transform-origin:right center
+     }
+        100% {
+            transform:scale(1);transform-origin:right center 
+        }
+    }
+
+    
+@keyframes scale-up-left { 
+    0% {
+        transform:scale(.5);transform-origin:left center }
+        100% {
+            transform:scale(1);transform-origin:left center 
+        }
+    }
+
+@keyframes apperance {
+    from {
+        opacity: 100;
+    }
+    to {
+        opacity: 0;
+    }
+}
