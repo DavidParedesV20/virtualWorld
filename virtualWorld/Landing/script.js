@@ -1,3 +1,4 @@
+//script.js//
 var inputName = document.getElementById('inputNameBox');
 var inputPass = document.getElementById('inputPassBox');
 var inputMailRegis =  document.getElementById('inputMailBox');
@@ -9,28 +10,29 @@ var btnIni = document.getElementById('btnIni');
 
 var celeb = document.getElementById('celeb');
 
+
 btnRegis.addEventListener('click', function() {
     var infomail = inputMailRegis.value;
     var infoName = inputName.value;
     var infoPass = inputPass.value;
 
-    if(infomail.indexOf('@') === -1){
-        alert('Ingresa un correo válido');
+    if(infomail.indexOf ('@') === -1){
+        alert('ingresa un correo válido');
     } else if (infoName.trim() === ''){
-        alert('Pon un nombre válido');
+        alert('Ponga un nombre válido');
     } else if (infoName.indexOf(' ') !== -1) {
         alert('Sin espacios');
     } else if (infoPass.trim() === '') {
-        alert('PIN inválido');
+        alert('Pin inválido');
     } else {
-        // Elimina la variable 'exito' y muestra la alerta directamente
-        alert('Registro finalizado con éxito!');
         celeb.style.display = 'block';
         celeb.addEventListener('animationend', function() {
             celeb.style.display = 'none';
         }, {once: true});
+        alert('Registro finalizado con éxtio!');
     }
 });
+
 
 btnIni.addEventListener('click', function() {
     var infoNameIni = inputNameIni.value;
